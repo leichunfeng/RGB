@@ -13,6 +13,7 @@
 		2466140F1C51BE6300BB7532 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2466140E1C51BE6300BB7532 /* Curry.framework */; };
 		246614111C51BF3E00BB7532 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246614101C51BF3E00BB7532 /* Quick.framework */; };
 		246614131C51BF4B00BB7532 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 246614121C51BF4B00BB7532 /* Nimble.framework */; };
+		246614161C52047000BB7532 /* RGBUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246614151C52047000BB7532 /* RGBUIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		2466140E1C51BE6300BB7532 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "Carthage/Checkouts/Curry/build/Debug-iphoneos/Curry.framework"; sourceTree = "<group>"; };
 		246614101C51BF3E00BB7532 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
 		246614121C51BF4B00BB7532 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		246614151C52047000BB7532 /* RGBUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBUIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			children = (
 				246613F11C5113C200BB7532 /* RGB.h */,
 				246613F31C5113C200BB7532 /* Info.plist */,
+				246614151C52047000BB7532 /* RGBUIColor.swift */,
 			);
 			path = RGB;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				246614161C52047000BB7532 /* RGBUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +332,7 @@
 		246614031C5113C300BB7532 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -338,12 +343,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leichunfeng.RGB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		246614041C5113C300BB7532 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
